@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    width: 640px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    width: 600px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+#game-canvas {
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.highscores {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.current-score {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.player-name {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.player-name input {
+    padding: 8px 12px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.player-name button {
+    padding: 8px 16px;
+    margin: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.player-name button:hover {
+    background: #45a049;
+}
+
+#score {
+    font-size: 32px;
+    color: #FF5722;
+}
+
+.highscores h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+button {
+    padding: 4px 8px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Results page specific styles */
+.game-over-title {
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.leaderboard-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.player-input-row {
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    margin-top: 1.5rem;
+}
+
+/* Ensure Bootstrap compatibility */
+.form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Results page optimization styles */
+.player-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.player-label {
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 38px; /* Match input height */
+}
+
+.name-input-group {
+    display: flex;
+    align-items: center;
+}
+
+.random-name-btn {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+}
+
+.random-name-btn:hover {
+    background-color: #5a32a3;
+    border-color: #5a32a3;
+}
+
+.submit-row {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Table alignment for results page */
+.table th {
+    text-align: center;
+}
+
+.table td.score-cell {
+    text-align: right;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.table td.time-cell {
+    text-align: center;
+}
+
+/* Ensure form controls have consistent height */
+.form-control, .btn {
+    height: 38px;
+    box-sizing: border-box;
+}
+
+/* Dice icon styling */
+.fa-dice {
+    margin-right: 5px;
+}

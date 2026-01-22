@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        
+        <div class="game-info">
+            <div class="score">得分: <span id="score">0</span>秒</div>
+            <div class="speed-control">
+                速度: <input type="range" id="speed" min="1" max="10" value="{{ speed }}">
+                <button id="apply-speed">应用速度</button>
+            </div>
+        </div>
+
+        <canvas id="game-canvas" width="300" height="300"></canvas>
+
+        <div class="highscores">
+            <h3>最高分</h3>
+            <ol>
+                {% for score in highscores %}
+                <li>{{ score.score }}秒 ({{ score.timestamp }})</li>
+                {% endfor %}
+            </ol>
+        </div>
+
+        <script src="/static/snake.js"></script>
+    </div>
+</body>
+</html>

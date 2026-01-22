@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        
+        <div class="game-info">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="speed-control">
+                速度: <input type="range" id="speed" min="1" max="10" value="{{ speed }}">
+                <span id="speed-value">{{ speed }}</span>
+            </div>
+        </div>
+
+        <canvas id="game-canvas" width="600" height="600" tabindex="0"></canvas>
+
+        <script src="/static/snake.js"></script>
+    </div>
+</body>
+</html>
